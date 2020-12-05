@@ -1,0 +1,86 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.1/css/all.min.css" integrity="sha512-+4zCK9k+qNFUR5X+cKL9EIR+ZOhtIloNl9GIKS57V1MyNsYpYcUrUeQc9vNfzsWfV28IaLL3i96P9sdNyeRssA==" crossorigin="anonymous" />
+</head>
+<style>
+#clock{
+    background-color: green;
+    color:black;
+    padding: 80px;
+    font-size: 200px;
+    position: relative;
+    max-width: 1205px;
+    margin-left: 147px;
+    display: flex;
+    
+
+
+}
+#alarm{
+  position: fixed;
+  top:70%;
+  left: 40%;
+  /* font-size: 40px; */
+  text-align: center;
+  border:2px solid black;
+  padding: 30px;
+  background-color: yellow;
+}
+#alarm input:focus{
+  outline: 0;
+  border-color: red;
+}
+label{
+  display:block;
+}
+#px{
+  font-size: 19px;
+  display: block;
+}
+#jack{
+  color: black;
+  font-size: large;
+  color: white;
+}
+.fas{
+  color: red;
+  display: inline;
+  position: fixed;
+  top:56.5%;
+  left: 20.5%;
+  display: none;
+  cursor: pointer;
+}
+
+#last {
+    max-width: 300px;
+    height: 38px;
+    align-items: center;
+    justify-content: center;
+}
+</style>
+<body>
+  <div id="clock">
+
+
+  </div>  
+
+  <div id="alarm">
+    <label>Give alarm</label>
+    <p id="px">hour:minute:sec AM/PM 
+      
+      <p> LIKE:- 11:40:00 AM</p>
+    </p>
+    <input type="text" id="alaGiven">
+  </div>
+  <div id="last">
+  <p id="jack">dtyhjk</p>
+  <i id="icon" onclick="get()"class="fas fa-trash"></i>
+</div>
+  <script src="app.js"></script>
+</body>
+</html>
